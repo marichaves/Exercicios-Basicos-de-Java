@@ -1,2 +1,2 @@
 # com.dominio.cursojavaloiane.aulas
- Estudos Loiane
+ Estudos  com a professora Loiane
