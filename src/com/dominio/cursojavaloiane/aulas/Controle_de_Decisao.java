@@ -7,13 +7,13 @@ public class Controle_de_Decisao {
 	Scanner scan = new Scanner(System.in);
 	
 	
-//	System.out.println("Qual a sua idade?: ");
-//	int idade = scan.nextInt();
-//		if (idade >= 18) {
-//			System.out.println("É maior de idade");
-//		} else {
-//			System.out.println("É menor de idade");
-//		}
+	System.out.println("Qual a sua idade?: ");
+	int idade = scan.nextInt();
+		if (idade >= 18) {
+			System.out.println("É maior de idade");
+		} else {
+			System.out.println("É menor de idade");
+		}
 		
 		//barato <= 10
 		//10 < vaor < 15 - pedir desconto 
