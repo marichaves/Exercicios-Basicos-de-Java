@@ -44,35 +44,35 @@ public class Exercicios_Aula15 {
 //			System.out.println("Consoante");
 //		}
 		
-		//Outra maneira de fazer o ex 4 é com a manipulação de String
-		System.out.println("Digite uma letra: ");
-		String letra = scan.next();
-		if(letra.equalsIgnoreCase("a")|| letra.equalsIgnoreCase("e")||
-				letra.equalsIgnoreCase("i")||letra.equalsIgnoreCase("o")||
-				letra.equalsIgnoreCase("u")) {
-			System.out.println(letra + ": é uma letra vogal");
-		}else {
-			System.out.println("É uma consoante");
-		}
-		
-		//Outra maneira de resolver o ex4 é com o switch case
-		if(letra.length() > 1) {
-			System.out.println("Não é uma letra válida");
-		} else {
-		switch(letra) {
-		case "a":
-		case "e":
-		case "i":
-		case "o":
-		case "u":
-		case "A":
-		case "E":
-		case "I":
-		case "O":
-		case "U":System.out.println("Vogal"); break;
-		default: System.out.println("Consoante");
-		}
-		}
+//		//Outra maneira de fazer o ex 4 é com a manipulação de String
+//		System.out.println("Digite uma letra: ");
+//		String letra = scan.next();
+//		if(letra.equalsIgnoreCase("a")|| letra.equalsIgnoreCase("e")||
+//				letra.equalsIgnoreCase("i")||letra.equalsIgnoreCase("o")||
+//				letra.equalsIgnoreCase("u")) {
+//			System.out.println(letra + ": é uma letra vogal");
+//		}else {
+//			System.out.println("É uma consoante");
+//		}
+//		
+//		//Outra maneira de resolver o ex4 é com o switch case
+//		if(letra.length() > 1) {
+//			System.out.println("Não é uma letra válida");
+//		} else {
+//		switch(letra) {
+//		case "a":
+//		case "e":
+//		case "i":
+//		case "o":
+//		case "u":
+//		case "A":
+//		case "E":
+//		case "I":
+//		case "O":
+//		case "U":System.out.println("Vogal"); break;
+//		default: System.out.println("Consoante");
+//		}
+//		}
 		
 
 //		System.out.println("Digite as duas notas do aluno");
@@ -190,6 +190,100 @@ public class Exercicios_Aula15 {
 //		}
 //		
 		
+//		System.out.println("Entre com o valor/hora:");
+//		double valorHora = scan.nextDouble();
+//		System.out.println("Qual o total de horas trabalhadas no mês?: ");
+//		double qtHoras = scan.nextDouble();
+//		
+//		double salarioBruto = valorHora * qtHoras;
+//		int percentualIR = 0;
+//		if(salarioBruto <= 900) {
+//			percentualIR = 0;
+//		} else if (salarioBruto > 900 && salarioBruto <= 1500) {
+//			percentualIR = 5;
+//		} else if (salarioBruto > 1500 && salarioBruto <= 2500) {
+//			percentualIR = 10;
+//		} else if (salarioBruto > 2500) {
+//			percentualIR = 20;
+//		}
+//		double ir = (salarioBruto / 100) * percentualIR;
+//		double inss = (salarioBruto / 100) * 10;
+//		double fgts = (salarioBruto / 100) * 11;
+//		double totalDescontos = ir + inss;
+//		double salarioLiquido = salarioBruto - totalDescontos;
+//		
+//		System.out.println("Salário Bruto: (" + valorHora + "*" + qtHoras + "): " + salarioBruto);
+//		System.out.println("(-) IR (" + percentualIR + "%): " + ir );
+//		System.out.println("(-) INSS (10%): " + inss);
+//		System.out.println("FGTS (11%): " + fgts);
+//		System.out.println("Total de descontos: " + totalDescontos);
+//		System.out.println("Salário líquido: " + salarioLiquido);
+		
+		
+		
+//		System.out.println("Digite um dia da semana de 1 - 7:");
+//		int semana = scan.nextInt();
+//		
+//		if (semana > 7) {
+//			System.out.println("Não é um dia da semana válido");
+//		} else {
+//			switch (semana) {
+//			case 1 :
+//				System.out.println("Domingo");
+//				break;
+//			case 2 :
+//				System.out.println("Segunda");
+//				break;
+//			case 3 :
+//				System.out.println("Terça");
+//				break;
+//			case 4 :
+//				System.out.println("Quarta");
+//				break;
+//			case 5 :
+//				System.out.println("Quinta");
+//				break;
+//			case 6 :
+//				System.out.println("Sexta");
+//				break;
+//			case 7 :
+//				System.out.println("Sábado");
+//				break;
+//			}
+//		}
+		
+		
+		
+		System.out.println("Digite a primeira nota no aluno: ");
+		double nota1 = scan.nextDouble();
+		System.out.println("Digite a segunda nota no aluno: ");
+		double nota2 = scan.nextDouble();
+
+		double media = (nota1 + nota2) / 2;
+		String aproveitamento = "";
+		if(media >= 9 && media <= 10) {
+			aproveitamento = "A";
+		} else if(media >= 7.5 && media < 9) {
+			aproveitamento = "B";
+		}  else if(media >= 6 && media < 7.5) {
+			aproveitamento = "C";
+		} else if(media >= 4 && media < 6) {
+			aproveitamento = "E";
+		} else if(media >= 0 && media < 4) {
+			aproveitamento = "E";
+		}
+		System.out.println("Nota1: " + nota1);
+		System.out.println("Nota2: " + nota2);
+		System.out.println("Media: " + media);
+		System.out.println("Conceito: " + aproveitamento);
+		
+		switch(aproveitamento) {
+		case "A":
+		case "B":
+		case "C": System.out.println("APROVADO"); break;
+		case "D":
+		case "E": System.out.println("REPROVADO"); break;
+		}
 		
 	}
 
