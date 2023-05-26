@@ -43,6 +43,37 @@ public class Exercicios_Aula15 {
 //		}else {
 //			System.out.println("Consoante");
 //		}
+		
+		//Outra maneira de fazer o ex 4 é com a manipulação de String
+		System.out.println("Digite uma letra: ");
+		String letra = scan.next();
+		if(letra.equalsIgnoreCase("a")|| letra.equalsIgnoreCase("e")||
+				letra.equalsIgnoreCase("i")||letra.equalsIgnoreCase("o")||
+				letra.equalsIgnoreCase("u")) {
+			System.out.println(letra + ": é uma letra vogal");
+		}else {
+			System.out.println("É uma consoante");
+		}
+		
+		//Outra maneira de resolver o ex4 é com o switch case
+		if(letra.length() > 1) {
+			System.out.println("Não é uma letra válida");
+		} else {
+		switch(letra) {
+		case "a":
+		case "e":
+		case "i":
+		case "o":
+		case "u":
+		case "A":
+		case "E":
+		case "I":
+		case "O":
+		case "U":System.out.println("Vogal"); break;
+		default: System.out.println("Consoante");
+		}
+		}
+		
 
 //		System.out.println("Digite as duas notas do aluno");
 //		float nota1 = scan.nextFloat();
@@ -123,39 +154,41 @@ public class Exercicios_Aula15 {
 //			System.out.println("Entrada inválida!");
 //		}
 
-		System.out.println("Calculando o reajuste salarial. Digite o salário do colaborador:");
-		double salario = scan.nextFloat();
 		
-		if(salario <= 280.0) {
-			double temp = salario * 0.20;
-			double novosalario = salario + temp;
-			System.out.println("O novo salário do funcionário será de: " + novosalario);
-			System.out.println("O salário antigo era de: " + salario);
-			System.out.println("O valor aumentado foi de:" + temp);
-			System.out.println("O Percentual aumentado foi de: 20%");
-		} else if(salario > 280.0 && salario < 700.0){
-			double temp = salario * 0.15;
-			double novosalario = salario + temp;
-			System.out.println("O novo salário do funcionário será de: " + novosalario);
-			System.out.println("O salário antigo era de: " + salario);
-			System.out.println("O valor aumentado foi de:" + temp);
-			System.out.println("O Percentual aumentado foi de: 15%");
-		} else if(salario >= 700.0 && salario < 1500.0){
-			double temp = salario * 0.10;
-			double novosalario = salario + temp;
-			System.out.println("O novo salário do funcionário será de: " + novosalario);
-			System.out.println("O salário antigo era de: " + salario);
-			System.out.println("O valor aumentado foi de:" + temp);
-			System.out.println("O Percentual aumentado foi de: 10%");
-		}else {
-			double temp = salario * 0.05;
-			double novosalario = salario + temp;
-			System.out.println("O novo salário do funcionário será de: " + novosalario);
-			System.out.println("O salário antigo era de: " + salario);
-			System.out.println("O valor aumentado foi de:" + temp);
-			System.out.println("O Percentual aumentado foi de: 5%");
-		}
 		
+//		System.out.println("Calculando o reajuste salarial. Digite o salário do colaborador:");
+//		double salario = scan.nextFloat();
+//		
+//		if(salario <= 280.0) {
+//			double temp = salario * 0.20;
+//			double novosalario = salario + temp;
+//			System.out.println("O novo salário do funcionário será de: " + novosalario);
+//			System.out.println("O salário antigo era de: " + salario);
+//			System.out.println("O valor aumentado foi de:" + temp);
+//			System.out.println("O Percentual aumentado foi de: 20%");
+//		} else if(salario > 280.0 && salario < 700.0){
+//			double temp = salario * 0.15;
+//			double novosalario = salario + temp;
+//			System.out.println("O novo salário do funcionário será de: " + novosalario);
+//			System.out.println("O salário antigo era de: " + salario);
+//			System.out.println("O valor aumentado foi de:" + temp);
+//			System.out.println("O Percentual aumentado foi de: 15%");
+//		} else if(salario >= 700.0 && salario < 1500.0){
+//			double temp = salario * 0.10;
+//			double novosalario = salario + temp;
+//			System.out.println("O novo salário do funcionário será de: " + novosalario);
+//			System.out.println("O salário antigo era de: " + salario);
+//			System.out.println("O valor aumentado foi de:" + temp);
+//			System.out.println("O Percentual aumentado foi de: 10%");
+//		}else {
+//			double temp = salario * 0.05;
+//			double novosalario = salario + temp;
+//			System.out.println("O novo salário do funcionário será de: " + novosalario);
+//			System.out.println("O salário antigo era de: " + salario);
+//			System.out.println("O valor aumentado foi de:" + temp);
+//			System.out.println("O Percentual aumentado foi de: 5%");
+//		}
+//		
 		
 		
 	}
