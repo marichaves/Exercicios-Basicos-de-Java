@@ -1,2 +1,1 @@
-# com.dominio.cursojavaloiane.aulas
- Estudos  com a professora Loiane
+#Resolução de Exercícios de Logica de Programação em Java
